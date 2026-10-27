@@ -1,480 +1,413 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Coffee</title>
+<!DOCTYPE html>
+<html lang="id" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <meta charset="UTF-8">
+    <title>JN.354 Coffee Shop</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.css">                  
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
 
-			  <header id="header" id="home">
-				<div class="header-top">
-		  			<div class="container">
-				  		<div class="row justify-content-end">
-				  			<div class="col-lg-8 col-sm-4 col-8 header-top-right no-padding">
-				  				<ul>
-				  					<li>
-				  						Mon-Fri: 8am to 2pm
-				  					</li>
-				  					<li>
-				  						Sat-Sun: 11am to 4pm
-				  					</li>
-				  					<li>
-				  						<a href="tel:(012) 6985 236 7512">(012) 6985 236 7512</a>
-				  					</li>				  					
-				  				</ul>
-				  			</div>
-				  		</div>			  					
-		  			</div>
-				</div>			  	
-			    <div class="container">
-			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-				      </div>
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="#home">Home</a></li>
-				          <li><a href="#about">About</a></li>
-				          <li><a href="#coffee">Coffee</a></li>
-				          <li><a href="#review">Review</a></li>
-				          <li><a href="#blog">Blog</a></li>
-				          <li class="menu-has-children"><a href="">Pages</a>
-				            <ul>
-				              <li><a href="generic.html">Generic</a></li>
-				              <li><a href="elements.html">Elements</a></li>
-				            </ul>
-				          </li>
-				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
-			    	</div>
-			    </div>
-			  </header><!-- #header -->
+    <!-- Fix Layout & Smooth Scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .banner-area {
+            position: relative;
+            padding-top: 180px !important;
+            padding-bottom: 120px !important;
+            background-size: cover !important;
+            background-position: center center !important;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        .banner-content {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
 
+   <!-- Header Navigation (Rapi Sejajar & Tanpa Bullet List) -->
+<header id="header" style="background-color: #2c1d18 !important; padding: 15px 0 !important; width: 100% !important; box-sizing: border-box !important;">
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
+        
+        <!-- Baris Utama: Logo di Kiri, Menu di Kanan -->
+        <div style="display: flex !important; justify-content: space-between !important; align-items: center !important; flex-wrap: wrap !important;">
+            
+            <!-- Logo JN.354 COFFEE -->
+            <div>
+                <a href="#home" style="font-size: 24px; font-weight: 800; color: #ffffff; text-decoration: none; font-family: sans-serif; letter-spacing: 1px;">
+                    JN.354 <span style="color: #d4a373;">COFFEE</span>
+                </a>
+            </div>
+            
+            <!-- Daftar Menu Navigasi (Sejajar ke Samping) -->
+            <nav>
+                <ul style="display: flex !important; list-style: none !important; margin: 0 !important; padding: 0 !important; gap: 25px !important; align-items: center !important;">
+                    <li><a href="#home" style="color: #ffffff !important; text-decoration: none !important; font-weight: 600; font-family: sans-serif; font-size: 15px;">Home</a></li>
+                    <li><a href="#menu-list" style="color: #d8c3b6 !important; text-decoration: none !important; font-weight: 600; font-family: sans-serif; font-size: 15px;">Menu List</a></li>
+                    <li><a href="#shopee-section" style="color: #d8c3b6 !important; text-decoration: none !important; font-weight: 600; font-family: sans-serif; font-size: 15px;">Order Shopee</a></li>
+                </ul>
+            </nav>
 
-			<!-- start banner Area -->
-			<section class="banner-area" id="home">	
-				<div class="container">
-					<div class="row fullscreen d-flex align-items-center justify-content-start">
-						<div class="banner-content col-lg-7">
-							<h6 class="text-white text-uppercase">Now you can feel the Energy</h6>
-							<h1>
-								Start your day with <br>
-								a black Coffee				
-							</h1>
-							<a href="#" class="primary-btn text-uppercase">Buy Now</a>
-						</div>											
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->	
+        </div>
 
-			<!-- Start video-sec Area -->
-			<section class="video-sec-area pb-100 pt-40" id="about">
-				<div class="container">
-					<div class="row justify-content-start align-items-center">
-						<div class="col-lg-6 video-right justify-content-center align-items-center d-flex">
-							<div class="overlay overlay-bg"></div>
-							<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid" src="img/play-icon.png" alt=""></a>
-						</div>						
-						<div class="col-lg-6 video-left">
-							<h6>Live Coffee making process.</h6>
-							<h1>We Telecast our <br>
-							Coffee Making Live</h1>
-							<p><span>We are here to listen from you deliver exellence</span></p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-							</p>
-							<img class="img-fluid" src="img/signature.png" alt="">
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End video-sec Area -->
-			
-			<!-- Start menu Area -->
-			<section class="menu-area section-gap" id="coffee">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">What kind of Coffee we serve for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Cappuccino</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Americano</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Espresso</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>	
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Macchiato</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Mocha</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Coffee Latte</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Piccolo Latte</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Ristretto</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-menu">
-								<div class="title-div justify-content-between d-flex">
-									<h4>Affogato</h4>
-									<p class="price float-right">
-										$49
-									</p>
-								</div>
-								<p>
-									Usage of the Internet is becoming more common due to rapid advance.
-								</p>								
-							</div>
-						</div>															
-					</div>
-				</div>	
-			</section>
-			<!-- End menu Area -->
-			
-			<!-- Start gallery Area -->
-			<section class="gallery-area section-gap" id="gallery">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">What kind of Coffee we serve for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-4">
-							<a href="img/g1.jpg" class="img-pop-home">
-								<img class="img-fluid" src="img/g1.jpg" alt="">
-							</a>	
-							<a href="img/g2.jpg" class="img-pop-home">
-								<img class="img-fluid" src="img/g2.jpg" alt="">
-							</a>	
-						</div>
-						<div class="col-lg-8">
-							<a href="img/g3.jpg" class="img-pop-home">
-								<img class="img-fluid" src="img/g3.jpg" alt="">
-							</a>	
-							<div class="row">
-								<div class="col-lg-6">
-									<a href="img/g4.jpg" class="img-pop-home">
-										<img class="img-fluid" src="img/g4.jpg" alt="">
-									</a>	
-								</div>
-								<div class="col-lg-6">
-									<a href="img/g5.jpg" class="img-pop-home">
-										<img class="img-fluid" src="img/g5.jpg" alt="">
-									</a>	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End gallery Area -->
-			
-			<!-- Start review Area -->
-			<section class="review-area section-gap" id="review">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">What kind of Coffee we serve for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-6 col-md-6 single-review">
-							<img src="img/r1.png" alt="">
-							<div class="title d-flex flex-row">
-								<h4>lorem ipusm</h4>
-								<div class="star">
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>								
-								</div>
-							</div>
-							<p>
-								Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-							</p>
-						</div>	
-						<div class="col-lg-6 col-md-6 single-review">
-							<img src="img/r2.png" alt="">
-							<div class="title d-flex flex-row">
-								<h4>lorem ipusm</h4>
-								<div class="star">
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star checked"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>
-									<span class="fa fa-star"></span>								
-								</div>
-							</div>
-							<p>
-								Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-							</p>
-						</div>	
-					</div>
-					<div class="row counter-row">
-						<div class="col-lg-3 col-md-6 single-counter">
-							<h1 class="counter">2536</h1>
-							<p>Happy Client</p>
-						</div>
-						<div class="col-lg-3 col-md-6 single-counter">
-							<h1 class="counter">7562</h1>
-							<p>Total Projects</p>
-						</div>
-						<div class="col-lg-3 col-md-6 single-counter">
-							<h1 class="counter">2013</h1>
-							<p>Cups Coffee</p>
-						</div>
-						<div class="col-lg-3 col-md-6 single-counter">
-							<h1 class="counter">10536</h1>
-							<p>Total Submitted</p>
-						</div>																		
-					</div>
-				</div>	
-			</section>
-			<!-- End review Area -->
-			
-			<!-- Start blog Area -->
-			<section class="blog-area section-gap" id="blog">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">What kind of Coffee we serve for you</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-6 col-md-6 single-blog">
-							<img class="img-fluid" src="img/b1.jpg" alt="">
-							<ul class="post-tags">
-								<li><a href="#">Travel</a></li>
-								<li><a href="#">Life Style</a></li>
-							</ul>
-							<a href="#"><h4>Portable latest Fashion for young women</h4></a>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
-							</p>
-							<p class="post-date">
-								31st January, 2018
-							</p>
-						</div>
-						<div class="col-lg-6 col-md-6 single-blog">
-							<img class="img-fluid" src="img/b2.jpg" alt="">
-							<ul class="post-tags">
-								<li><a href="#">Travel</a></li>
-								<li><a href="#">Life Style</a></li>
-							</ul>
-							<a href="#"><h4>Portable latest Fashion for young women</h4></a>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore.
-							</p>
-							<p class="post-date">
-								31st January, 2018
-							</p>
-						</div>						
-					</div>
-				</div>	
-			</section>
-			<!-- End blog Area -->
-			
+    </div>
+</header>
+<!-- End Header Navigation -->
 
-			<!-- start footer Area -->		
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>About Us</h6>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-								</p>
-								<p class="footer-text">
-									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								</p>								
-							</div>
-						</div>
-						<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h6>Newsletter</h6>
-								<p>Stay update with our latest</p>
-								<div class="" id="mc_embed_signup">
-									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
-										<input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-			                            	<button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-			                            	<div style="position: absolute; left: -5000px;">
-												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-											</div>
+    <!-- Start Banner Area Utama -->
+    <section class="banner-area" id="home"> 
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-start">
+                <div class="banner-content col-lg-7">
+                    <h6 class="text-white text-uppercase" style="letter-spacing: 2px; color: #d4a373 !important; font-weight: 600;">Now you can feel the energy</h6>
+                    <h1 class="text-white" style="font-size: 48px; font-weight: 800; line-height: 1.2; margin: 15px 0 25px 0; font-family: sans-serif;">
+                        Good Mornings Begin with Good Coffee
+                    </h1>
+                    <!-- Tombol BUY NOW menuju ke #shopee-section -->
+                    <a href="#shopee-section" class="primary-btn" style="display: inline-block; background-color: #ffffff; color: #222222; padding: 14px 36px; border-radius: 50px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,0.3); transition: all 0.3s ease;">
+                        BUY NOW &darr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Area -->
 
-										<div class="info pt-20"></div>
-									</form>
-								</div>
-							</div>
-						</div>						
-						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-							<div class="single-footer-widget">
-								<h6>Follow Us</h6>
-								<p>Let us be social</p>
-								<div class="footer-social d-flex align-items-center">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-behance"></i></a>
-								</div>
-							</div>
-						</div>							
-					</div>
-				</div>
-			</footer>	
-			<!-- End footer Area -->	
+			<!-- Start About / Story Section (Pengganti Video Polos) -->
+<section style="padding: 90px 0 !important; background: #ffffff !important; background-image: none !important;">
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
+        
+        <div style="display: flex !important; flex-wrap: wrap !important; align-items: center !important; justify-content: space-between !important; gap: 40px !important;">
+            
+            <!-- KOTAK KIRI: Diganti Foto Estetik & Badge Keren (Tanpa Video) -->
+            <div style="flex: 0 0 48% !important; max-width: 48% !important; box-sizing: border-box !important; position: relative;">
+                
+                <!-- Bingkai Foto Utama -->
+                <div style="width: 100% !important; height: 380px !important; border-radius: 20px !important; overflow: hidden !important; box-shadow: 0 20px 40px rgba(44, 29, 24, 0.15) !important; border: 4px solid #fcf9f5;">
+                    <img src="img/kopi-banyaknyo.jpeg" alt="JN.354 Signature Coffee" style="width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important;">
+                </div>
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>			
-			<script src="js/jquery.sticky.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>			
-			<script src="js/parallax.min.js"></script>	
-			<script src="js/waypoints.min.js"></script>
-			<script src="js/jquery.counterup.min.js"></script>					
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+                <!-- Badge / Stempel Melayang Estetik di Pojok -->
+                <div style="position: absolute; bottom: -20px; right: -20px; background: #2c1d18; color: #d4a373; width: 110px; height: 110px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 4px solid #ffffff; box-shadow: 0 10px 25px rgba(44,29,24,0.3); font-family: sans-serif;">
+                    <span style="font-size: 18px;">⭐</span>
+                    <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px;">100% Fresh</span>
+                </div>
 
+            </div>
 
+            <!-- KOTAK KANAN: Teks Variasi & Tombol Aksi -->
+            <div style="flex: 0 0 48% !important; max-width: 48% !important; box-sizing: border-box !important;">
+                
+                <!-- Kategori / Sub-judul -->
+                <span style="display: inline-block; background-color: #f4ece1; color: #8c6d53; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; font-family: sans-serif;">
+                    ☕ Our Philosophy
+                </span>
 
+                <!-- Judul Utama -->
+                <h2 style="font-weight: 800; color: #2c1d18; font-size: 36px; margin-bottom: 15px; font-family: sans-serif; letter-spacing: -0.5px; line-height: 1.2;">
+                    Good Coffee, <span style="background: linear-gradient(135deg, #b08968, #5c4033); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Warm Vibes.</span>
+                </h2>
+
+                <!-- Deskripsi -->
+                <p style="color: #666666; font-size: 15px; line-height: 1.7; margin-bottom: 25px; font-family: sans-serif;">
+                    Nikmati racikan kopi terbaik dari biji pilihan berkualitas tinggi untuk menyempurnakan setiap momen dan mengawali harimu dengan penuh semangat dan kehangatan.
+                </p>
+
+                <!-- Poin-poin Keunggulan Kecil -->
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px;">
+                    <div style="display: flex; align-items: center; gap: 10px; color: #444; font-size: 14px; font-family: sans-serif; font-weight: 600;">
+                        <span style="color: #b08968; font-size: 16px;">✓</span> Biji Kopi Pilihan & Freshly Roasted
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #444; font-size: 14px; font-family: sans-serif; font-weight: 600;">
+                        <span style="color: #b08968; font-size: 16px;">✓</span> Diracik oleh Barista Berpengalaman
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px; color: #444; font-size: 14px; font-family: sans-serif; font-weight: 600;">
+                        <span style="color: #b08968; font-size: 16px;">✓</span> Suasana Kedai Nyaman & Cozy
+                    </div>
+                </div>
+
+                <!-- Tombol Navigasi ke Menu -->
+                <div>
+                    <a href="#menu-list" style="display: inline-flex; align-items: center; justify-content: center; padding: 12px 28px; background-color: #2c1d18; color: #d4a373; font-weight: 700; text-decoration: none; font-size: 14px; font-family: sans-serif; border-radius: 8px; box-shadow: 0 6px 15px rgba(44,29,24,0.2); transition: all 0.2s ease;">
+                        Jelajahi Menu Kami &rarr;
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End About / Story Section -->
+			<!-- Start Menu Category Area (Latar Polos Putih Tanpa Motif) -->
+<section class="menu-area section-gap" id="coffee" style="padding: 60px 0 !important; background: #ffffff !important; background-image: none !important;">
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
+        
+        <!-- Judul Atas -->
+        <div style="margin-bottom: 40px; text-align: left;">
+            <h1 style="font-weight: 700; color: #222; font-size: 36px; margin-bottom: 10px; font-family: sans-serif;">Good Coffee, Warm Vibes.</h1>
+        </div>                      
+
+      
+<section style="padding: 80px 0 60px 0 !important; background: linear-gradient(180deg, #ffffff 0%, #fcf9f5 100%) !important; background-image: none !important; position: relative; overflow: hidden;">
+    
+    <!-- Elemen Dekorasi Latar Belakang Lingkaran Halus -->
+    <div style="position: absolute; top: -50px; left: -50px; width: 250px; height: 250px; background: rgba(212, 163, 115, 0.08); border-radius: 50%; pointer-events: none;"></div>
+    <div style="position: absolute; bottom: 10px; right: -80px; width: 300px; height: 300px; background: rgba(176, 137, 104, 0.06); border-radius: 50%; pointer-events: none;"></div>
+
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px; position: relative; z-index: 2;">
+        
+        <!-- Header Judul Section dengan Variasi Badge & Garis Emas -->
+        <div style="text-align: center; margin-bottom: 50px;">
+            <span style="display: inline-block; background-color: #2c1d18; color: #d4a373; padding: 6px 20px; border-radius: 50px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; font-family: sans-serif; box-shadow: 0 4px 12px rgba(44,29,24,0.15);">
+                ☕ Crafted With Passion
+            </span>
+            <h1 style="font-weight: 800; color: #222222; font-size: 42px; margin-bottom: 12px; font-family: sans-serif; letter-spacing: -0.5px; line-height: 1.2;">
+                Good Coffee, <span style="background: linear-gradient(135deg, #b08968 0%, #5c4033 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Warm Vibes.</span>
+            </h1>
+            <p style="color: #666666; font-size: 16px; max-width: 580px; margin: 0 auto; font-family: sans-serif; line-height: 1.6;">
+                Pilih racikan favoritmu dari biji kopi berkualitas tinggi untuk menyempurnakan harimu.
+            </p>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 18px;">
+                <div style="width: 30px; height: 2px; background-color: #d4a373; border-radius: 2px;"></div>
+                <div style="width: 8px; height: 8px; background-color: #b08968; border-radius: 50%;"></div>
+                <div style="width: 30px; height: 2px; background-color: #d4a373; border-radius: 2px;"></div>
+            </div>
+        </div>                      
+
+        <!-- Pembungkus 3 Kolom Kategori Ber-Variasi -->
+        <div style="display: flex !important; flex-wrap: wrap !important; margin-left: -15px !important; margin-right: -15px !important; justify-content: center !important; gap: 25px 0 !important;">
+            
+            <!-- Kolom 1: Coffee-Milk Based -->
+            <div style="flex: 0 0 31.333% !important; max-width: 31.333% !important; padding: 0 15px !important; box-sizing: border-box !important;">
+                <div style="background: #ffffff !important; border-radius: 18px !important; border: 1px solid #efe6dd !important; padding: 22px !important; box-shadow: 0 12px 30px rgba(92, 64, 51, 0.08) !important; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
+                    <div>
+                        <!-- Tempat Foto + Badge Melayang -->
+                        <div style="width: 100% !important; height: 290px !important; overflow: hidden !important; border-radius: 14px !important; margin-bottom: 20px !important; background-color: #f8f8f8 !important; position: relative;">
+                            <img src="img/coffe basic.jpeg" alt="Coffee-Milk Based" style="width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important;">
+                            <span style="position: absolute; top: 12px; left: 12px; background: rgba(44, 29, 24, 0.85); color: #ffffff; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; font-family: sans-serif; backdrop-filter: blur(4px);">Best Seller 🥛</span>
+                        </div>
+                        
+                        <h3 style="font-weight: 800; color: #2c1d18; font-size: 22px; margin-bottom: 10px; font-family: sans-serif;">Coffee-Milk Based</h3>
+                        <p style="color: #666666; font-size: 14px; line-height: 1.6; margin-bottom: 25px; font-family: sans-serif;">
+                            Paduan espresso pilihan dengan susu segar. Menghasilkan rasa kopi susu yang seimbang, <em>creamy</em>, dan nikmat.
+                        </p>
+                    </div>
+
+                    <!-- Tombol Aksi Kapsul Kopi -->
+                    <div>
+                        <a href="#menu-list" style="display: inline-flex; align-items: center; justify-content: space-between; width: 100%; padding: 12px 20px; background-color: #2c1d18; color: #d4a373; font-weight: 700; text-decoration: none; font-size: 14px; font-family: sans-serif; border-radius: 10px; box-sizing: border-box; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(44, 29, 24, 0.2);">
+                            <span>Lihat Varian</span>
+                            <span style="font-size: 16px;">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom 2: Americano-Based -->
+            <div style="flex: 0 0 31.333% !important; max-width: 31.333% !important; padding: 0 15px !important; box-sizing: border-box !important;">
+                <div style="background: #ffffff !important; border-radius: 18px !important; border: 1px solid #efe6dd !important; padding: 22px !important; box-shadow: 0 12px 30px rgba(92, 64, 51, 0.08) !important; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
+                    <div>
+                        <!-- Tempat Foto + Badge Melayang -->
+                        <div style="width: 100% !important; height: 290px !important; overflow: hidden !important; border-radius: 14px !important; margin-bottom: 20px !important; background-color: #f8f8f8 !important; position: relative;">
+                            <img src="img/americano.jpeg" alt="Americano-Based" style="width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important;">
+                            <span style="position: absolute; top: 12px; left: 12px; background: rgba(92, 64, 51, 0.85); color: #ffffff; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; font-family: sans-serif; backdrop-filter: blur(4px);">Fresh & Bold ☕</span>
+                        </div>
+                        
+                        <h3 style="font-weight: 800; color: #2c1d18; font-size: 22px; margin-bottom: 10px; font-family: sans-serif;">Americano-Based</h3>
+                        <p style="color: #666666; font-size: 14px; line-height: 1.6; margin-bottom: 25px; font-family: sans-serif;">
+                            Segelas Americano murni menyegarkan. Menampilkan karakter biji kopi khas pilihan dengan rasa yang <em>clean</em> dan mantap.
+                        </p>
+                    </div>
+
+                    <!-- Tombol Aksi Kapsul Kopi -->
+                    <div>
+                        <a href="#menu-list" style="display: inline-flex; align-items: center; justify-content: space-between; width: 100%; padding: 12px 20px; background-color: #2c1d18; color: #d4a373; font-weight: 700; text-decoration: none; font-size: 14px; font-family: sans-serif; border-radius: 10px; box-sizing: border-box; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(44, 29, 24, 0.2);">
+                            <span>Lihat Varian</span>
+                            <span style="font-size: 16px;">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom 3: Non-Coffee -->
+            <div style="flex: 0 0 31.333% !important; max-width: 31.333% !important; padding: 0 15px !important; box-sizing: border-box !important;">
+                <div style="background: #ffffff !important; border-radius: 18px !important; border: 1px solid #efe6dd !important; padding: 22px !important; box-shadow: 0 12px 30px rgba(92, 64, 51, 0.08) !important; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;">
+                    <div>
+                        <!-- Tempat Foto + Badge Melayang -->
+                        <div style="width: 100% !important; height: 290px !important; overflow: hidden !important; border-radius: 14px !important; margin-bottom: 20px !important; background-color: #f8f8f8 !important; position: relative;">
+                            <img src="img/coklat syum.jpeg" alt="Non-Coffee" style="width: 100% !important; height: 100% !important; object-fit: cover !important; display: block !important;">
+                            <span style="position: absolute; top: 12px; left: 12px; background: rgba(176, 137, 104, 0.9); color: #ffffff; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; font-family: sans-serif; backdrop-filter: blur(4px);">Non-Coffee 🍵</span>
+                        </div>
+                        
+                        <h3 style="font-weight: 800; color: #2c1d18; font-size: 22px; margin-bottom: 10px; font-family: sans-serif;">Non-Coffee</h3>
+                        <p style="color: #666666; font-size: 14px; line-height: 1.6; margin-bottom: 25px; font-family: sans-serif;">
+                            Pilihan minuman non-kopi yang lezat. Dari varian manis hingga creamy, temukan rasa favorit Anda di sini.
+                        </p>
+                    </div>
+
+                    <!-- Tombol Aksi Kapsul Kopi -->
+                    <div>
+                        <a href="#menu-list" style="display: inline-flex; align-items: center; justify-content: space-between; width: 100%; padding: 12px 20px; background-color: #2c1d18; color: #d4a373; font-weight: 700; text-decoration: none; font-size: 14px; font-family: sans-serif; border-radius: 10px; box-sizing: border-box; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(44, 29, 24, 0.2);">
+                            <span>Lihat Varian</span>
+                            <span style="font-size: 16px;">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+			<!-- Start 2 Image Menu Section (Variasi Teks Lebih Menarik & Estetik) -->
+<section class="gallery-area section-gap" id="menu-list" style="padding: 70px 0 !important; background: #ffffff !important; background-image: none !important;">
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
+        
+        <!-- Judul Atas dengan Variasi & Gaya Estetik -->
+        <div style="margin-bottom: 50px; text-align: center;">
+            <span style="display: inline-block; background-color: #f4ece1; color: #8c6d53; padding: 6px 16px; border-radius: 50px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; font-family: sans-serif;">
+                Katalog & Penawaran
+            </span>
+            <h1 style="font-weight: 800; color: #222; font-size: 40px; margin-bottom: 12px; font-family: sans-serif; letter-spacing: -0.5px;">
+                Pilihan Menu & <span style="background: linear-gradient(135deg, #b08968, #5c4033); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Promo JN.354</span>
+            </h1>
+            <p style="color: #666; font-size: 16px; max-width: 600px; margin: 0 auto; font-family: sans-serif; line-height: 1.5;">
+                Nikmati berbagai varian rasa kopi terbaik dan penawaran menarik spesial untuk menemani hari santaimu.
+            </p>
+            <!-- Garis Pemisah Artistik -->
+            <div style="width: 60px; height: 3px; background-color: #b08968; margin: 20px auto 0 auto; border-radius: 2px;"></div>
+        </div>                      
+
+        <!-- Pembungkus 2 Gambar Berjejer -->
+        <div style="display: flex !important; flex-wrap: wrap !important; margin-left: -15px !important; margin-right: -15px !important; justify-content: center !important; align-items: center !important; gap: 30px !important;">
+            
+            <!-- Gambar 1: Daftar Menu -->
+            <div style="flex: 0 0 47% !important; max-width: 47% !important; box-sizing: border-box !important;">
+                <div style="width: 100% !important; background: #2c1d18 !important; border-radius: 12px !important; overflow: hidden !important; box-shadow: 0 15px 35px rgba(0,0,0,0.12) !important; display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+                    <img src="img/daftar-menu.jpeg" alt="Daftar Menu JN.354 Coffee" style="width: 100% !important; height: auto !important; display: block !important; border-radius: 12px !important;">
+                </div>
+            </div>
+
+            <!-- Gambar 2: Banner WE'RE READY -->
+            <div style="flex: 0 0 47% !important; max-width: 47% !important; box-sizing: border-box !important;">
+                <div style="width: 100% !important; background: #2c1d18 !important; border-radius: 12px !important; overflow: hidden !important; box-shadow: 0 15px 35px rgba(0,0,0,0.12) !important; display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease;">
+                    <img src="img/yoiki-jn.jpeg" alt="JN.354 Ready to Go" style="width: 100% !important; height: auto !important; display: block !important; border-radius: 12px !important;">
+                </div>
+            </div>
+
+        </div>
+    </div>  
+</section>	
+			<!-- Start Shopee & Contact Section (Nuansa Coklat Kopi Hangat & Elegan) -->
+<section style="padding: 70px 0 !important; background: #ffffff !important; background-image: none !important;">
+	<section id="shopee-section" style="padding: 80px 0 !important; background: #ffffff !important;"></section>
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
+        
+        <!-- Kotak Banner Nuansa Coklat Kopi -->
+        <div style="background: linear-gradient(135deg, #2c1d18 0%, #3d261d 100%) !important; border: 1px solid #4a3228 !important; border-radius: 20px !important; padding: 50px 30px !important; text-align: center !important; box-shadow: 0 15px 40px rgba(44,29,24,0.2) !important; position: relative; overflow: hidden;">
+            
+            <!-- Badge / Label Atas (Nuansa Krem Kopi) -->
+            <span style="display: inline-block; background: rgba(212, 163, 115, 0.15); color: #d4a373; padding: 6px 18px; border-radius: 50px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; font-family: sans-serif; border: 1px solid rgba(212, 163, 115, 0.3);">
+                ☕ Online Coffee Delivery
+            </span>
+
+            <!-- Judul Utama dengan Gradasi Emas-Kopi -->
+            <h2 style="font-weight: 800; color: #ffffff; font-size: 38px; margin-bottom: 15px; font-family: sans-serif; letter-spacing: -0.5px; line-height: 1.2;">
+                Order Now on <span style="background: linear-gradient(135deg, #ffd166, #f4a261); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Shopee!</span>
+            </h2>
+
+            <!-- Deskripsi -->
+            <p style="color: #d8c3b6; font-size: 16px; max-width: 620px; margin: 0 auto 30px auto; font-family: sans-serif; line-height: 1.6;">
+                Makin praktis! Pesan minuman favoritmu langsung dari aplikasi. Cari toko kami <strong style="color: #ffffff;">JN.354 Coffee</strong> dan nikmati promo menariknya.
+            </p>
+
+            <!-- Garis Pemisah Emas Kopi -->
+            <div style="width: 50px; height: 3px; background-color: #d4a373; margin: 0 auto 30px auto; border-radius: 2px; opacity: 0.6;"></div>
+
+            <!-- Area Tombol Aksi (Shopee & WA dengan Nuansa Kopi) -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+                
+                <!-- 1. Tombol Shopee (Warna Oranye Shopee yang Menyala Terang) -->
+                <a href="https://shopee.co.id/universal-link/now-food/shop/21894626?deep_and_deferred=1&shareChannel=whatsapp" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 32px; background: linear-gradient(135deg, #ff6600, #ee4d2d) !important; color: #ffffff !important; font-weight: 700; text-decoration: none; font-size: 15px; font-family: sans-serif; border-radius: 10px; box-shadow: 0 8px 20px rgba(238, 77, 45, 0.4) !important; transition: transform 0.2s ease;">
+                    <span style="margin-right: 8px; font-size: 18px;">🛍️</span> FIND US ON SHOPEE
+                </a>
+
+                <!-- 2. Tombol Kontak WhatsApp (Border Krem Kopi Elegan) -->
+                <a href="https://wa.me/6285724440065" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; padding: 14px 28px; background-color: transparent; border: 2px solid #d4a373; color: #ffffff !important; font-weight: 700; text-decoration: none; font-size: 15px; font-family: sans-serif; border-radius: 10px; transition: all 0.2s ease;">
+                    <span style="margin-right: 8px;">📞</span> (+62 857-2444-0065)
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>  
+</section>
+<!-- End Shopee & Contact Section -->
+			<!-- Start Custom Footer JN.354 Coffee -->
+<footer style="background-color: #1f130f !important; color: #d8c3b6 !important; padding: 60px 0 30px 0 !important; font-family: sans-serif; border-top: 3px solid #d4a373;">
+    <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
+        
+        <!-- Bagian Grid Footer (3 Kolom) -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; margin-bottom: 40px;">
+            
+            <!-- Kolom 1: Tentang Brand -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #ffffff; font-size: 20px; font-weight: 700; margin-bottom: 15px; letter-spacing: 1px;">JN.354 COFFEE</h3>
+                <p style="font-size: 14px; line-height: 1.6; color: #b8a598; margin-bottom: 0;">
+                    Menyajikan racikan kopi berkualitas tinggi dengan rasa yang konsisten dan penuh kehangatan untuk setiap penikmat kopi.
+                </p>
+            </div>
+
+            <!-- Kolom 2: Jam Operasional -->
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Jam Operasional</h3>
+                <p style="font-size: 14px; line-height: 1.6; color: #b8a598; margin-bottom: 5px;">
+                    <strong>Senin - Minggu:</strong> 10:00 - 22:00 WIB
+                </p>
+                <p style="font-size: 14px; line-height: 1.6; color: #b8a598; margin-bottom: 0;">
+                    Tersedia juga secara online via Shopee Food!
+                </p>
+            </div>
+
+            <!-- Kolom 3: Sosial Media -->
+            <div style="flex: 1; min-width: 200px;">
+                <h3 style="color: #ffffff; font-size: 18px; font-weight: 700; margin-bottom: 15px;">Ikuti Kami</h3>
+                <p style="font-size: 14px; color: #b8a598; margin-bottom: 15px;">Dapatkan info promo menarik di sosial media kami:</p>
+                <div style="display: flex; gap: 12px;">
+                    <!-- Link Instagram -->
+                    <a href="https://instagram.com/username_kamu" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: rgba(212,163,115,0.15); color: #d4a373; border-radius: 50%; text-decoration: none; font-weight: bold; transition: 0.2s;">ig</a>
+                    <!-- Link Shopee / TikTok -->
+                    <a href="https://shopee.co.id" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: rgba(212,163,115,0.15); color: #d4a373; border-radius: 50%; text-decoration: none; font-weight: bold; transition: 0.2s;">sh</a>
+                    <!-- Link WhatsApp -->
+                    <a href="https://wa.me/6285700000000" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: rgba(212,163,115,0.15); color: #d4a373; border-radius: 50%; text-decoration: none; font-weight: bold; transition: 0.2s;">wa</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Garis Bawah & Hak Cipta -->
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; text-align: center; font-size: 13px; color: #99887e;">
+            <p style="margin: 0;">Copyright &copy; 2026 <strong>JN.354 Coffee</strong>. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+<!-- End Custom Footer -->
